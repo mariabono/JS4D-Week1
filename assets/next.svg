@@ -1,3 +1,17 @@
-<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.2088 0.0202637L22.3631 10.2597L12.2088 20.4992L9.36858 17.6826L14.7464 12.2597H0.571289V8.25973H14.7464L9.36858 2.83686L12.2088 0.0202637Z" fill="black"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="50px" viewBox="0 0 65 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-7" transform="translate(-659.000000, -172.000000)">
+            <g id="Group-4" transform="translate(659.000000, 172.000000)">
+                <rect id="Rectangle" fill="#6423DE" transform="translate(32.500000, 25.000000) scale(-1, 1) translate(-32.500000, -25.000000) " x="0" y="0" width="65" height="50" rx="2.94117647"></rect>
+                <g id="Group-2" transform="translate(16.021277, 15.246783)" stroke="#FFEDE7">
+                    <polyline id="Path-2" points="19.5531915 0.753216912 29.8297872 10.3120404 19.5531915 19.870864"></polyline>
+                    <path d="M29.1784701,10.2532169 L0.101780668,10.2532169" id="Line"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
