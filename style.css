@@ -163,3 +163,60 @@ footer {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+/***************************************
+***************************************
+Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+    h1 { font-size: 4rem; line-height: 4.5rem;}
+    h2 {font-size: 2rem;}
+    h4 {font-size: 0.85rem;} 
+
+    .art {
+        position: absolute;
+        width: 100vw;
+        margin: 0;
+        height: 50vh;
+    }
+
+    header, footer, section {
+        width: 85%;
+        justify-content: left;
+    }
+
+    header {
+        top: 55vh;
+    }
+
+
+    section {
+        top: 60vh;
+    }
+
+    section > * {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        position: fixed;
+        width: 100vw;
+        z-index: 200;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        justify-content: center;
+        background-color: #FFEDE7;
+        padding: 20px 0;
+        box-shadow: 2px 2px 5px rgba(66, 66, 66, 0.25);
+    } 
+
+
+} 
+

@@ -133,7 +133,7 @@ previousTag.addEventListener('click', function (){
 
 
 
-
+ 
 // when a user presses arrow keys 
 document.addEventListener("keydown", function (event){
 
@@ -157,14 +157,10 @@ document.addEventListener("keyup", function (event){
     console.log(event)
 
     if (event.key == "ArrowRight") {
-        nextTag.style.backgroundImage = "url('assets/next.svg')"
-
         next()
     }
 
     if (event.key == "ArrowLeft") {
-        nextPrev.style.backgroundImage = "url('assets/prev.svg')"
-
         previous()
     }
 
