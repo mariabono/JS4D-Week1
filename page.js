@@ -4,20 +4,20 @@ let pageNumber = 0
 // Content for the pages
 const pages = [
 
-    { copy: "Digital Product Designer", background: "#edc8a9", circle: "#3e78ed" },
-    { copy: "From Barcelona" , background: "#a1fffe", circle: "#e34a47" },
-    { copy: "Based in Oslo (Norway)", background: "#d3c7f3", circle: "#f7fe00" },
-    { copy: "Working at Making Waves", background: "#faffb8", circle: "#b472e6" }
+    { copy: "Digital Product Designer", art: "#3e78ed" },
+    { copy: "From Barcelona" , art: "#e34a47" },
+    { copy: "Based in Oslo (Norway)", art: "#f7fe00" },
+    { copy: "Working at Making Waves", art: "#b472e6" }
 
 ]
 
 
-const nextTag = document.querySelector("footer img.next")
-const previousTag = document.querySelector("footer img.prev")
-const randomTag = document.querySelector("footer img.random")
+const nextTag = document.querySelector("header img.next")
+const previousTag = document.querySelector("header img.prev")
+// const randomTag = document.querySelector("footer img.random")
 
-const outputTag = document.querySelector("h2")
-const circleTag = document.querySelector("section div.circle")
+const outputTag = document.querySelector("h1")
+const artTag = document.querySelector(".art")
 const bodyTag = document.querySelector("body")
 
 
@@ -45,21 +45,20 @@ const previous = function () {
 }
 
 
-const random = function () {
+// const random = function () {
 
-    pageNumber = Math.floor( Math.random() * pages.length)
+//     pageNumber = Math.floor( Math.random() * pages.length)
 
-    updateSection()
+//     updateSection()
 
-}
+// }
 
 
 
 const updateSection = function (){
 
     outputTag.innerHTML = pages[pageNumber].copy
-    circleTag.style.backgroundColor =  pages[pageNumber].circle
-    bodyTag.style.backgroundColor = pages[pageNumber].background
+    artTag.style.backgroundColor =  pages[pageNumber].art
 
 }
 
@@ -78,10 +77,10 @@ previousTag.addEventListener('click', function (){
 })
 
 
-randomTag.addEventListener('click', function (){
+/* randomTag.addEventListener('click', function (){
     random()
 })
-
+ */
 
 
 

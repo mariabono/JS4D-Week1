@@ -1,67 +1,109 @@
+/***************************************
+***************************************
+Fonts */
 
 @font-face {
-    font-family: "Bluu Next";
-    src: url(css/bluunext.woff2), url(css/bluunext.woff);
+    font-family: "LeMurmure";
+    src: url(assets/LeMurmure.woff), url(assets/LeMurmure.woff2);
 }
+
+@font-face {
+    font-family: "LunchType22-Medium";
+    src: url(assets/lunchtype22-medium-webfont.woff), url(assets/lunchtype22-medium-webfont.woff2);
+} 
+
+@font-face {
+    font-family: "LunchType22-Regular";
+    src: url(assets/lunchtype22-regular-webfont.woff), url(assets/lunchtype22-regular-webfont.woff2);
+} 
+
+
+/***************************************
+***************************************
+General */
+
 
 body {
-    font-family: "Bluu Next", Times New Roman;
-    font-size: 24px;
-    line-height: 1.25;
-    color: #000000;
-    background-color: #edc8a9;
-    background-image: linear-gradient(180deg, #ffffff, rgba(255,255,255,0));
+    font-family: "LunchType22-Regular",'Times New Roman', Times, serif;
+    color: #CC5B3F;
+    background-color: #FFEDE7;
+    height: 100%;
+}
 
-    transition: background-color 0.5s;
-
-    height: 100vh;
+h1, h2 {
+    font-family: "LeMurmure", 'Times New Roman', Times, serif;
 }
 
 
-h1 {
-    margin: 20px 0 20px 0; 
+h1 {font-size: 80pt;}
+h2 {font-size: 30pt;}
+h4 {font-size: 12pt; color: #5F1DDF} 
+p {font-size: 14pt;}
+
+a {color: #5F1DDF; text-decoration: none;}
+
+/***************************************
+***************************************
+Blocks */
+
+
+header, footer, section {
+    position: absolute;
+    right: 0;
+    width: 60vw;
+    justify-content: left;
 }
 
 
-h2 {
-    font-size: 10vmin;
+header {
+    max-height: 50px ;
+    top: 2vh;
+}
+
+header img {
+    margin: 0 10px 0 0;
+    cursor: pointer;
 }
 
 
 section {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    text-align: center;
+    top: 20vh;
 }
 
-
-section div.circle {
-    width: 20px;
-    height: 20px;
-    background-color: #3e78ed;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.5s;
-
+section > * {
+    max-width: 40vw;
+    margin-bottom: 20px;
 }
+
 
 
 footer {
+    bottom: 5vh;}
+    
+
+
+.art {
+    width: 33vw;
+    height: 100%;
+    background-color: #3e78ed;
+    display: block ;
     position: fixed;
-    bottom: 0;
+    transition: background-color 0.5s;
     left: 0;
-    width: 100%;
-    padding: 30px 0 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    bottom: 0;
+    background-image: url(assets/img/book1.jpeg);
+    background-size: cover;
+
 }
 
-
-footer img {
-    margin: 0 10px 0 10px;
-    cursor: pointer;
+a.btn {
+    margin-top: 30px;
+    height: 50px;
+    padding: 20px;
+    background-color: #FFEDE7 ;
+    border: 1px solid #5F1DDF;
+    border-radius: 2px;
+    justify-content: center;
+    font-family: "LunchType22-Medium", sans-serif;
 }
