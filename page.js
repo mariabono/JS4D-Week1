@@ -140,11 +140,11 @@ document.addEventListener("keydown", function (event){
     console.log(event)
 
     if (event.key == "ArrowRight") {
-        nextTag.style.backgroundImage = "url('assets/next-hover.svg')"
+        nextTag.classList.add("active");
     }
 
     if (event.key == "ArrowLeft") {
-        nextPrev.style.backgroundImage = "url('assets/prev-hover.svg')"
+        previousTag.classList.add("active");
     }
 
 })
@@ -157,10 +157,12 @@ document.addEventListener("keyup", function (event){
     console.log(event)
 
     if (event.key == "ArrowRight") {
+        nextTag.classList.remove("active");
         next()
     }
 
     if (event.key == "ArrowLeft") {
+        previousTag.classList.remove("active");
         previous()
     }
 

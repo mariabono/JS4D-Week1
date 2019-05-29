@@ -97,6 +97,10 @@ section > * {
     margin-bottom: 20px;
 }
 
+section h4 {
+    display: none;
+}
+
 
 /***************************************
 ***************************************
@@ -133,8 +137,9 @@ nav {
 .prev {background-image: url(assets/prev.svg);}
 .next {background-image: url(assets/next.svg);}
 
-.prev:hover {background-image: url(assets/prev-hover.svg);}
-.next:hover {background-image: url(assets/next-hover.svg);}
+.prev:hover, .prev.active {background-image: url(assets/prev-hover.svg);}
+.next:hover, .next.active {background-image: url(assets/next-hover.svg);}
+
 
 
 
@@ -180,6 +185,7 @@ Media Queries */
 
     .art {
         position: absolute;
+        display: block;
         width: 100vw;
         margin: 0;
         height: 50vh;
@@ -190,19 +196,27 @@ Media Queries */
         justify-content: left;
     }
 
-    header {
+     header {
         top: 55vh;
     }
 
 
     section {
         top: 60vh;
-    }
+        margin-bottom: 100px;
+    } 
 
     section > * {
         max-width: 100%;
         margin-bottom: 10px;
     }
+
+    section h4 {
+        display: inherit;
+        line-height: 1.2rem;
+        margin-top: 50px;
+    }
+
 
     nav {
         position: fixed;
@@ -217,6 +231,7 @@ Media Queries */
         box-shadow: 2px 2px 5px rgba(66, 66, 66, 0.25);
     } 
 
+    footer {display: none;}
 
 } 
 
