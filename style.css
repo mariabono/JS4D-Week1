@@ -85,10 +85,9 @@ footer {
 .art {
     width: 33vw;
     height: 100%;
-    background-color: #3e78ed;
+    background-color: #CC5B3F;
     display: block ;
     position: fixed;
-    transition: background-color 0.5s;
     left: 0;
     top: 0;
     bottom: 0;
@@ -100,7 +99,7 @@ footer {
 a.btn {
     margin-top: 30px;
     height: 50px;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #FFEDE7 ;
     border: 1px solid #5F1DDF;
     border-radius: 2px;

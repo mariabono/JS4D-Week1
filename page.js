@@ -4,10 +4,12 @@ let pageNumber = 0
 // Content for the pages
 const pages = [
 
-    { copy: "Digital Product Designer", art: "#3e78ed" },
-    { copy: "From Barcelona" , art: "#e34a47" },
-    { copy: "Based in Oslo (Norway)", art: "#f7fe00" },
-    { copy: "Working at Making Waves", art: "#b472e6" }
+    { title: "El asesinato de Sócrates", author: "Marcos Chicot", art: "url(assets/img/book1.jpeg)" },
+    { title: "Forest Dark", author: "Nicole Kraus", art: "url(assets/img/book2.jpeg)" },
+    { title: "The Seven Deaths of Evelyn Hardcastle" , author: "Stuart Turton", art: "url(assets/img/book3.jpeg)"  },
+    { title: "Eleanor Oliphant is Completely Fine", author: "Gail Honeyman", art: "url(assets/img/book4.jpeg)"  },
+    { title: "Educated", author: "Tara Westover", art: "url(assets/img/book5.jpeg)"  },
+    { title: "The Mystery of Three Quarters", author: "Sophie Hannah", art: "url(assets/img/book6.jpeg)"  }
 
 ]
 
@@ -18,6 +20,7 @@ const previousTag = document.querySelector("header img.prev")
 
 const outputTag = document.querySelector("h1")
 const artTag = document.querySelector(".art")
+const authorTag = document.querySelector(".author")
 const bodyTag = document.querySelector("body")
 
 
@@ -46,19 +49,17 @@ const previous = function () {
 
 
 // const random = function () {
-
 //     pageNumber = Math.floor( Math.random() * pages.length)
-
 //     updateSection()
-
 // }
 
 
 
 const updateSection = function (){
 
-    outputTag.innerHTML = pages[pageNumber].copy
-    artTag.style.backgroundColor =  pages[pageNumber].art
+    outputTag.innerHTML = pages[pageNumber].title
+    authorTag.innerHTML = pages[pageNumber].author
+    artTag.style.backgroundImage =  pages[pageNumber].art
 
 }
 
