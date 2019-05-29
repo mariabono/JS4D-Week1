@@ -48,11 +48,6 @@ const previous = function () {
 }
 
 
-// const random = function () {
-//     pageNumber = Math.floor( Math.random() * pages.length)
-//     updateSection()
-// }
-
 
 
 const updateSection = function (){
@@ -76,14 +71,6 @@ nextTag.addEventListener('click', function (){
 previousTag.addEventListener('click', function (){
     previous()  
 })
-
-
-/* randomTag.addEventListener('click', function (){
-    random()
-})
- */
-
-
 
 
 // when a user presses arrow keys

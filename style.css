@@ -27,7 +27,7 @@ body {
     font-family: "LunchType22-Regular",'Times New Roman', Times, serif;
     color: #CC5B3F;
     background-color: #FFEDE7;
-    height: 100%;
+    margin: 0;
 }
 
 h1, h2 {
@@ -38,9 +38,10 @@ h1, h2 {
 h1 {font-size: 80pt;}
 h2 {font-size: 30pt;}
 h4 {font-size: 12pt; color: #5F1DDF} 
-p {font-size: 14pt;}
+p {font-size: 14pt; line-height: 1.5em;}
 
 a {color: #5F1DDF; text-decoration: none;}
+b {font-family: "LunchType22-Medium", sans-serif;}
 
 /***************************************
 ***************************************
@@ -49,8 +50,8 @@ Blocks */
 
 header, footer, section {
     position: absolute;
-    right: 0;
-    width: 60vw;
+    right: 10vw;
+    width: 50vw;
     justify-content: left;
 }
 
@@ -96,7 +97,7 @@ footer {
 
 }
 
-a.btn {
+.btn {
     margin-top: 30px;
     height: 50px;
     padding: 20px 30px;
@@ -105,4 +106,14 @@ a.btn {
     border-radius: 2px;
     justify-content: center;
     font-family: "LunchType22-Medium", sans-serif;
+}
+
+.btn:hover {
+    color: #FFEDE7;
+    background-color: #5F1DDF;
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
