@@ -24,94 +24,24 @@ General */
 
 
 body {
-    font-family: "LunchType22-Regular",'Times New Roman', Times, serif;
+    font-family: "LunchType22-Regular", Times, serif;
     color: #FF3854;
-    text-rendering: geometricPrecision;
     font-size: 1rem;
     background-color: #FFEDE7;
-    margin: 0;
-
 }
 
+
 h1, h2 {
-    font-family: "LeMurmure", 'Times New Roman', Times, serif;
+    font-family: "LeMurmure", Times, serif;
 }
 
 
 h1 {font-size: 6rem; line-height: 6.5rem;}
-h2 {font-size: 30pt;}
+h2 {font-size: 2.5rem;}
 h4 {font-size: 0.75rem;} 
 p {font-size: 1rem; line-height: 1.5em;}
-
 a {color: #5F1DDF; text-decoration: none;}
 b {font-family: "LunchType22-Medium", sans-serif;}
-
-
-
-/***************************************
-***************************************
-Blocks */
-
-
-header, footer, section, nav {
-    position: absolute;
-    right: 10vw;
-    width: 50vw;
-    justify-content: left;
-}
-
-
-header {
-    top: 2vh;
-    opacity: 0.5;
-}
-
-
-nav {
-   /* background-color: red;*/
-    bottom: 15vh;
-}
-
-
-
-.btn {
-    margin-top: 30px;
-    padding: 15px 30px;
-    background-color: #FFEDE7 ;
-    border: 1px solid #5F1DDF;
-    border-radius: 2px;
-    justify-content: center;
-    font-family: "LunchType22-Medium", sans-serif;
-}
-
-.btn:hover {
-    color: #FFEDE7;
-    background-color: #5F1DDF;
-    cursor: pointer;
-}
-
-nav img {
-    margin: 0 10px 0 0;
-    cursor: pointer;
-}
-
-
-
-
-section {
-    top: 10vh;
-}
-
-section > * {
-    max-width: 40vw;
-    margin-bottom: 20px;
-}
-
-
-
-footer {
-    bottom: 2vh;}
-    
 
 
 .art {
@@ -129,7 +59,107 @@ footer {
 }
 
 
+header, footer, section, nav {
+    position: absolute;
+    right: 10vw;
+    width: 50vw;
+    justify-content: left;
+}
 
+
+
+
+/***************************************
+***************************************
+Header */
+
+
+header {
+    top: 2vh;
+    opacity: 0.5;
+}
+
+
+
+
+
+/***************************************
+***************************************
+Content */
+
+
+section {
+    top: 10vh;
+}
+
+section > * {
+    max-width: 35vw;
+    margin-bottom: 20px;
+}
+
+
+/***************************************
+***************************************
+Navigation */
+
+
+nav {
+  bottom: 15vh;
+  display:flex;
+}
+
+
+.btn, .prev, .next {
+    margin: 0 10px 0 0;
+}
+
+
+.btn {
+    padding: 15px 30px;
+    background-color: #FFEDE7 ;
+    justify-content: center;
+    font-family: "LunchType22-Medium", sans-serif;
+    left: 0;
+    border: 1px solid #5F1DDF;
+    border-radius: 2px;
+}
+
+.prev, .next {
+    width: 65px;
+    height: 50px;
+    right: 0;
+}
+
+.prev {background-image: url(assets/prev.svg);}
+.next {background-image: url(assets/next.svg);}
+
+.prev:hover {background-image: url(assets/prev-hover.svg);}
+.next:hover {background-image: url(assets/next-hover.svg);}
+
+
+
+.btn:hover {
+    background-color: rgba(94, 29, 223, 0.11);
+    color: #5F1DDF;
+}
+
+
+.btn:hover, .prev:hover, .next:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/***************************************
+***************************************
+Footer */
+
+
+footer {
+    bottom: 2vh;}
+    
 footer a:hover {
     text-decoration: underline;
 }

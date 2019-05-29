@@ -61,8 +61,8 @@ const pages = [
 ]
 
 
-const nextTag = document.querySelector("nav img.next")
-const previousTag = document.querySelector("nav img.prev")
+const nextTag = document.querySelector("nav .next")
+const previousTag = document.querySelector("nav .prev")
 const outputTag = document.querySelector("h1")
 const artTag = document.querySelector(".art")
 const authorTag = document.querySelector(".author")
@@ -121,7 +121,6 @@ const updateSection = function (){
 
 
 // click events
-
 nextTag.addEventListener('click', function (){
     next()  
 })
@@ -132,17 +131,40 @@ previousTag.addEventListener('click', function (){
 })
 
 
-// when a user presses arrow keys
 
+
+
+// when a user presses arrow keys 
+document.addEventListener("keydown", function (event){
+
+    console.log(event)
+
+    if (event.key == "ArrowRight") {
+        nextTag.style.backgroundImage = "url('assets/next-hover.svg')"
+    }
+
+    if (event.key == "ArrowLeft") {
+        nextPrev.style.backgroundImage = "url('assets/prev-hover.svg')"
+    }
+
+})
+
+
+
+// when a user releases arrow keys 
 document.addEventListener("keyup", function (event){
 
     console.log(event)
 
     if (event.key == "ArrowRight") {
+        nextTag.style.backgroundImage = "url('assets/next.svg')"
+
         next()
     }
 
     if (event.key == "ArrowLeft") {
+        nextPrev.style.backgroundImage = "url('assets/prev.svg')"
+
         previous()
     }
 
