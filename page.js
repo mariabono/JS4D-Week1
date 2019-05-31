@@ -56,6 +56,15 @@ const pages = [
         art: "url(assets/img/book6.jpeg)" ,
         link:"https://www.goodreads.com/book/show/36671154-the-mystery-of-three-quarters"
     
+    },
+
+    { 
+        title: "The Murder of Roger Ackroyd", 
+        author: "Agatha Christie", 
+        sinopsis:"Poirot retires to a village near the home of a friend he met in London, Roger Ackroyd, who agrees to keep him anonymous, as he pursues his retirement project of perfecting vegetable marrows. He is not long at this pursuit when his friend is murdered.", 
+        art: "url(assets/img/book7.jpeg)" ,
+        link:"https://www.goodreads.com/book/show/45863690-the-murder-of-roger-ackroyd"
+    
     }
 
 ]
